@@ -2,7 +2,7 @@
 
 {
   imports = [
-	./modules/dconf.nix
+	./modules/bundle.nix
 	];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -29,5 +29,10 @@
 		la = "ls -lisa";
 		};
 	};
+  programs.git = {
+    enable = true;
+    userName  = "adminprivileges";
+    userEmail = "caldwellthaddeus@protonmail.com";
+  };
 }
 
